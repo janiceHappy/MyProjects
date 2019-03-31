@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/master_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/main_background"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_margin="5dp">
+        <TextView
+            android:id="@+id/master_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="15sp"
+            android:text="周大全"/>
+        <TextView
+            android:id="@+id/master_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="11sp"
+            android:text="应用心理学硕士"/>
+        <TextView
+            android:id="@+id/master_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="11sp"
+            android:text="个人成长"/>
+        <TextView
+            android:id="@+id/master_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginVertical="5dp"
+            android:textSize="12sp"
+            android:textColor="#B63E3E"
+            android:text="￥100-300"/>
+
+    </LinearLayout>
+
+</LinearLayout>
