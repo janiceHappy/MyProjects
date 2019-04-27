@@ -2,7 +2,18 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.growthmaster">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <permission
+        android:name="com.example.growthmaster.permission.RECEIVE_MSG"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.growthmaster.permission.RECEIVE_MSG" /> <!-- //允许程序打开网络 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,7 +22,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light">
+        <service
+            android:name=".service.MediaService"
+            android:enabled="true"
+            android:exported="true"></service>
 
+        <activity android:name=".BroadcastDetailActivity" />
+        <activity android:name=".FMActivity" />
+        <activity
+            android:name=".ResourceContent"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".StudyResource"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".BookActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".MasterDetailActivity" />
         <activity
             android:name=".PsychologicalServices"
             android:label="@string/title_activity_psychological_services" />
@@ -23,6 +49,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name=".service.ClientService" />
     </application>
 
 </manifest>

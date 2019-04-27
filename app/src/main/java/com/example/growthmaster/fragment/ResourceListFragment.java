@@ -9,25 +9,36 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.growthmaster.R;
-import com.example.growthmaster.adapter.StudyResourceAdapter;
+import com.example.growthmaster.adapter.ResourceRecyclerViewAdapter;
+import com.example.growthmaster.db.Resource;
+
+import java.util.ArrayList;
+import java.util.List;
 
 
-public class ListFragment extends Fragment {
+public class ResourceListFragment extends Fragment {
 
-    private RecyclerView mRecyclerView;
+    private List<Resource> resourceList = new ArrayList<>();
+    RecyclerView resourceRecyclerView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mRecyclerView =  (RecyclerView) inflater.inflate(R.layout.list_fragment, container, false);
-        return mRecyclerView;
+        View view = inflater.inflate(R.layout.resource_list_fragment, container, false);
+        resourceRecyclerView = (RecyclerView) view.findViewById(R.id.resource_recycler_view);
+        LinearLayoutManager layoutManager = new LinearLayoutManager(container.getContext());
+        resourceRecyclerView.setLayoutManager(layoutManager);
+        initResource();
+        ResourceRecyclerViewAdapter mRecyclerViewAdapter = new ResourceRecyclerViewAdapter(resourceList);
+        resourceRecyclerView.setAdapter(mRecyclerViewAdapter);
+        return view;
     }
 
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mRecyclerView.setLayoutManager(new LinearLayoutManager(mRecyclerView.getContext()));
-        mRecyclerView.setAdapter(new StudyResourceAdapter(getActivity()) {
-        });
+    private void initResource(){
+        for(int i = 0; i < 8; i++){
+            Resource resource= new Resource("论调节青少年心态的十大有效方法","中国心理健康教育网",
+                    "2019-4-14",R.drawable.master);
+            resourceList.add(resource);
+        }
     }
 
 }

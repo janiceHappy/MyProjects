@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 
 import com.example.growthmaster.R;
 import com.example.growthmaster.db.Master;
-import com.example.growthmaster.util.MasterAdapter;
+import com.example.growthmaster.adapter.MasterAdapter;
 
 import java.util.ArrayList;
 import java.util.List;

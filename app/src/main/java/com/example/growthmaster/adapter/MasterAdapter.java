@@ -1,4 +1,4 @@
-package com.example.growthmaster.util;
+package com.example.growthmaster.adapter;
 
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
@@ -9,7 +9,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.growthmaster.MasterDetailActivity;
-import com.example.growthmaster.PsychologicalServices;
 import com.example.growthmaster.R;
 import com.example.growthmaster.db.Master;
 import com.google.gson.Gson;

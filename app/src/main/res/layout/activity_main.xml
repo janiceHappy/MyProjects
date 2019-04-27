@@ -42,18 +42,18 @@
 
                     <ImageView
                         android:layout_width="45dp"
-                        android:layout_height="47dp"
+                        android:layout_height="45dp"
                         android:layout_gravity="center_horizontal"
                         android:src="@drawable/servicefill" />
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="心理咨询"/>
+                        android:text="专家问询"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/education_videos"
+                    android:id="@+id/study_resource"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -69,7 +69,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="自我成长"/>
+                        android:text="自我学习"/>
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/psychological_tests"
@@ -88,11 +88,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="心理测试"/>
+                        android:text="心理测评"/>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/my_diary"
+                    android:id="@+id/my_emotion"
                     android:orientation="vertical"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -108,7 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:text="我的日记"/>
+                        android:text="心理FM"/>
                 </LinearLayout>
             </LinearLayout>
 

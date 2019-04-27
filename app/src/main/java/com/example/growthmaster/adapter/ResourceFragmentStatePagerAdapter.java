@@ -6,15 +6,15 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import java.util.List;
 
-public class StudyResourceFragmentAdapter extends FragmentStatePagerAdapter {
+public class ResourceFragmentStatePagerAdapter extends FragmentStatePagerAdapter {
 
-    private List<Fragment> mFragments;
     private List<String> mTitles;
+    private List<Fragment> mFragments;
 
-    public StudyResourceFragmentAdapter(FragmentManager fm, List<Fragment> fragments, List<String> titles) {
+    public ResourceFragmentStatePagerAdapter(FragmentManager fm, List<Fragment> fragments, List<String> titles) {
         super(fm);
-        mFragments = fragments;
         mTitles = titles;
+        mFragments = fragments;
     }
 
     @Override
