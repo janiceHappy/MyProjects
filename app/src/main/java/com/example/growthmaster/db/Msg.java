@@ -10,10 +10,23 @@ public class Msg extends LitePalSupport {
 
     private String content;
 
+    private String picture;
+
     private int type;
+
+    public Msg(){
+    }
 
     public Msg(String content, int type){
         this.content = content;
+        this.type = type;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setType(int type) {
         this.type = type;
     }
 
@@ -25,4 +38,11 @@ public class Msg extends LitePalSupport {
         return type;
     }
 
+    public String getPicture() {
+        return picture;
+    }
+
+    public void setPicture(String picture) {
+        this.picture = picture;
+    }
 }

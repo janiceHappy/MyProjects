@@ -14,6 +14,33 @@ public class FM {
     private String absolute_url;
     private String url_list;
     private String object_id;
+    private int commentnum;
+    private String range;
+    private int duration;
+
+    public int getCommentnum() {
+        return commentnum;
+    }
+
+    public void setCommentnum(int commentnum) {
+        this.commentnum = commentnum;
+    }
+
+    public String getRange() {
+        return range;
+    }
+
+    public void setRange(String range) {
+        this.range = range;
+    }
+
+    public int getDuration() {
+        return duration;
+    }
+
+    public void setDuration(int duration) {
+        this.duration = duration;
+    }
 
     public String getId() {
         return id;

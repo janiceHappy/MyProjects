@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="ring"
-    android:innerRadius="150dp"
+    android:innerRadius="100dp"
     android:thickness="50dp"
     android:useLevel="false">
 
     <!--背景颜色，具体颜色自行在color文件设置-->
     <solid android:color="#2A2A2A"/>
+
+    <gradient
+        android:type="linear"
+        android:angle="45"
+        android:startColor="#2A2A2A"
+        android:centerColor="#C12A2A2A"
+        android:endColor="#2A2A2A"/>
 </shape>

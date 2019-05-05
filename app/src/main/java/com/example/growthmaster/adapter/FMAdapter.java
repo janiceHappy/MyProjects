@@ -58,6 +58,7 @@ public class FMAdapter extends RecyclerView.Adapter<FMAdapter.ViewHolder> {
                 int position = holder.getAdapterPosition();
                 FM fm = mFMList.get(position);
                 Intent intent = new Intent(mContext, BroadcastDetailActivity.class);
+                intent.putExtra("object_id",fm.getObject_id());
                 intent.putExtra("media_url",fm.getUrl());
                 mContext.startActivity(intent);
             }
