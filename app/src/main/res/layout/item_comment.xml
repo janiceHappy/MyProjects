@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_comment_user_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:src="@drawable/master"
+        />
+    <TextView
+        android:id="@+id/tv_comment_user_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_comment_user_avatar"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="匿名用户"/>
+    <TextView
+        android:id="@+id/tv_comment_created"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_comment_user_avatar"
+        android:layout_below="@id/tv_comment_user_nickname"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="X月X日 18:10"
+        />
+    <TextView
+        android:id="@+id/tv_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_comment_user_avatar"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:textSize="16sp"
+        android:text="我觉得吧：的数据三款哪款好上课好好上课的数据三款哪款好上课好好上课的数据三款哪款好课好好上课"
+        />
+
+</RelativeLayout>
